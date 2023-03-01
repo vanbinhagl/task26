@@ -1,0 +1,38 @@
+.c-sectionheader {
+    font-size: 4.8rem;
+    letter-spacing: 4.8px;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+
+    &.c-sectionheader--left {
+        padding-bottom: 40px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 57px;
+            height: 1px;
+            background: #231815;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &.c-sectionheader--center {
+        padding-bottom: 25px;
+        text-align: center;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 57px;
+            height: 1px;
+            background: #231815;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

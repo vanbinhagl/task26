@@ -1,0 +1,78 @@
+/*------------------------------------------------------------
+table
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-plan {
+    padding-top: 12.3rem;
+
+    .c-plan__design {
+        display: flex;
+        padding-top: 86px;
+    }
+
+    .c-plan__detail {
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: #231815;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .c-plan__detailitem {
+        &:first-child {
+            transform: translateX(-15px);
+        }
+
+        &:nth-child(2) {
+            transform: translateX(17px);
+        }
+
+        &:last-child {
+            transform: translateX(49px);
+        }
+    }
+
+    .c-plan__detailunit {
+        padding-left: 23px;
+    }
+
+    .c-plan__info {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-top: 128px;
+    }
+
+    .c-plan__infoitem {
+        display: flex;
+        column-gap: 13.3rem;
+        border-bottom: 1px solid #cbcbcb;
+        padding-bottom: 11px;
+
+        &:not(:first-child) {
+            padding-top: 31px;
+        }
+    }
+
+    .c-plan__infoname {
+        margin-left: 16px;
+        min-width: 145px;
+    }
+
+    .c-plan__infotag {
+        margin-left: -10px;
+        margin-top: -3px;
+    }
+
+    .c-plan__tagitem {
+        font-size: 2rem;
+        display: inline-block;
+        border: 1px solid #cbcbcb;
+        padding: 3px 16px;
+        font-feature-settings: "palt";
+        margin-right: 15px;
+        border-radius: 3px;
+    }
+}

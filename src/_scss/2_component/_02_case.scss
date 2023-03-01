@@ -1,0 +1,105 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+
+/*
+------------------------------------------------------------*/
+.c-case {
+    padding-top: 75px;
+    background: url("./assets/img/case-bg.png");
+    background-repeat: no-repeat;
+
+    .c-case__title {
+        font-size: 3.6rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .c-case__body {
+        display: flex;
+        padding: 25px 187px 0;
+        justify-content: space-between;
+    }
+
+    .c-case__item {
+        width: 474px;
+    }
+
+    .c-case__itemtop {
+        font-family: $third-fonts;
+        position: relative;
+        width: max-content;
+    }
+
+    .c-case__itembottom {
+        position: relative;
+        font-feature-settings: "palt";
+        transform: translate(20px, -14px);
+    }
+
+    .c-case__itemnumber {
+        font-size: 21.3rem;
+        line-height: 1;
+        margin-left: 28px;
+        color: #ededed;
+    }
+
+    .c-case__numberlabel {
+        position: absolute;
+        color: #c7c7c7;
+        bottom: 52px;
+        left: 43%;
+        font-size: 2.4rem;
+        letter-spacing: 5.5px;
+    }
+
+    .c-case__itemcontent {
+        font-size: 2.4rem;
+        font-weight: 700;
+        max-width: 474px;
+        max-height: 155px;
+        width: 100%;
+        line-height: 1.2;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        padding: 49px 10px;
+        border-radius: 8px;
+        margin-top: 11px;
+        height: 30%;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 30px solid #000;
+            top: -28px;
+            left: 134px;
+        }
+    }
+
+    .c-case__itemlabel {
+        font-feature-settings: "palt";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #7a89a8;
+        color: #fff;
+        border-radius: 18px;
+        font-size: 1.8rem;
+        font-family: $second-fonts;
+        font-weight: 400;
+        padding: 0 10px;
+        transform: translateY(-50%);
+        height: 35px;
+        min-width: 211px;
+        top: 5px;
+        right: -10px;
+    }
+}

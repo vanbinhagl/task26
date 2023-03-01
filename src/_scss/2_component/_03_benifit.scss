@@ -1,0 +1,84 @@
+/*------------------------------------------------------------
+icon
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-case__benifit {
+    text-align: center;
+    padding-top: 105px;
+
+    .c-benifit__title {
+        font-size: 3.4rem;
+        font-weight: 400;
+        margin-bottom: 17px;
+        color: #231815;
+
+        .c-benifit__title--strong {
+            font-size: 4.6rem;
+            font-family: $second-fonts;
+            color: #252a6d;
+        }
+    }
+
+    .c-benifit__subtitle {
+        font-family: $four-fonts;
+        font-size: 4.8rem;
+        letter-spacing: 4.8px;
+        font-weight: 300;
+    }
+
+    .c-benifit__body {
+        padding-top: 75px;
+    }
+
+    .c-benifit__item {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 96px;
+
+        &.c-benifit__item--reverse {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .c-benifit__itemcontent {
+        width: 592px;
+        position: relative;
+        padding-top: 90px;
+        padding-left: 90px;
+        font-size: 2.1rem;
+        color: #231815;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    .c-benifit__number {
+        position: absolute;
+        top: -29px;
+        left: 13px;
+    }
+
+    .c-benifit__itemtitle {
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+        line-height: 1.4;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: url("./assets/img/benifit-4.png");
+            background-repeat: no-repeat;
+            width: 42px;
+            height: 40px;
+            top: -39%;
+            right: -10%;
+        }
+    }
+
+    .c-benifit__itemimage {
+        flex: 0 0 530px;
+    }
+}

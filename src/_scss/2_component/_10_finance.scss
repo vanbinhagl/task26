@@ -1,0 +1,30 @@
+/*------------------------------------------------------------
+line
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-finance {
+    margin-top: 90px;
+    padding-top: 96px;
+    background: #ededed;
+
+    .c-finance__cost {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .c-finance__costcontent {
+        color: #fff;
+        font-size: 3rem;
+        background-color: #231815;
+        display: inline-block;
+        padding: 10px 58px 25px;
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .c-finance__costnumber {
+        padding-right: 10px;
+    }
+}

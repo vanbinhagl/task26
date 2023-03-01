@@ -1,44 +1,320 @@
 <%- include('_layouts/layout', { title: 'Home page' }); -%>
 
-<!-- @meta -->
-<meta name="description" content="Home page">
-<!-- @@meta -->
+  <!-- @meta -->
+  <meta name="description" content="Home page">
+  <!-- @@meta -->
 
-<!-- @content -->
-<main class="p-top">
-  <section class="c-mainvisual">
-    <div class="c-mainvisual__inner">
-      <h2>LOREM IPSUM</h2>
-      <p>In volutpat metus quis velit malesuada</p>
-      <a href="<%= BASE_URL %>about.html" class="c-btn1">JOIN NOW</a>
-    </div>
-  </section>
+  <!-- @content -->
+  <main>
+    <!-- BANNER -->
+    <section class="c-mainvisual">
+      <div class="c-mainvisual__content">
+        <div class="c-mainvisual__inner">
+          <a href="./" class="c-mainvisual__logo">
+            <h1>
+              <img src="./assets/img/main-logo.png" alt="「こんな家に住みたい」をカタチにした家">
+            </h1>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <section class="p-top1">
-    <div class="l-container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-      </p>
-    </div>
-  </section>
-</main>
-<!-- @@content -->
+    <!-- CASE -->
+    <section class="c-case">
+      <h2 class="c-case__title">家づくりの、こんな不安やお悩みないですか？</h2>
 
-<!-- @script -->
-<script>
-  console.log("home page");
-</script>
-<!-- @@script -->
+      <article class="c-case__body">
+        <div class="c-case__item">
+          <div class="c-case__itemtop">
+            <h3 class="c-case__itemnumber">01</h3>
+            <p class="c-case__numberlabel">case</p>
+          </div>
+          <div class="c-case__itembottom">
+            <p class="c-case__itemcontent">
+              子育てにはどんな家が良いんだろう？
+            </p>
+          </div>
+        </div>
+        <div class="c-case__item">
+          <div class="c-case__itemtop">
+            <h3 class="c-case__itemnumber">02</h3>
+            <p class="c-case__numberlabel">case</p>
+          </div>
+          <div class="c-case__itembottom">
+            <p class="c-case__itemcontent">
+              理想の家って実現できるの？
+            </p>
+            <span class="c-case__itemlabel">いろいろとこだわった</span>
+          </div>
+        </div>
+        <div class="c-case__item">
+          <div class="c-case__itemtop">
+            <h3 class="c-case__itemnumber">03</h3>
+            <p class="c-case__numberlabel">case</p>
+          </div>
+          <div class="c-case__itembottom">
+            <p class="c-case__itemcontent">
+              暮らしのスタイルがイメージできない
+            </p>
+            <span class="c-case__itemlabel">家は建てたいけど</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="c-case__benifit">
+        <h2 class="c-benifit__title">はじめての家づくりが具体的に進む、ご来店の<span class="c-benifit__title--strong">3つのメリット</span></h2>
+        <h3 class="c-sectionheader u-fontfour">WELCOME TO MODELHOUSE</h3>
+
+        <div class="c-benifit__body l-container">
+          <div class="c-benifit__item">
+            <div class="c-benifit__itemcontent">
+              <div class="c-benifit__number">
+                <img src="./assets/img/benifit-1.png" alt="実物を見て触って体感できます">
+              </div>
+              <h4 class="c-benifit__itemtitle">実物を見て触って<span class="u-textstrong">体感</span>できます!</h4>
+              <p>カタログや資料だけで はなく、高気密・高断熱の木
+                の住まいや、家事動線や収納スペースの女性目線で
+                叶った工夫など、実際に見て触ってご体感いただけ
+                ます。</p>
+            </div>
+            <div class="c-benifit__itemimage">
+              <img src="./assets/img/benifit-img-1.jpg" alt="実物を見て触って体感できます">
+            </div>
+          </div>
+          <div class="c-benifit__item c-benifit__item--reverse">
+            <div class="c-benifit__itemcontent">
+              <div class="c-benifit__number">
+                <img src="./assets/img/benifit-2.png" alt="実物を見て触って体感できます">
+              </div>
+              <h4 class="c-benifit__itemtitle">土地情報<span class="u-textstrong">1000件以上</span>が見放題!</h4>
+              <p>愛媛県の最新の土地情報から、学区・最寄りの駅な
+                どご希望の条件でお好きな土地をご覧いただけます。
+                さらに、地盤予測や付帯工事費なども含め、建てた
+                後も安心して暮らせる総合的な土地のアドバイスを
+                いたします。 </p>
+            </div>
+            <div class="c-benifit__itemimage">
+              <img src="./assets/img/benifit-img-2.jpg" alt="実物を見て触って体感できます">
+            </div>
+          </div>
+          <div class="c-benifit__item">
+            <div class="c-benifit__itemcontent">
+              <div class="c-benifit__number">
+                <img src="./assets/img/benifit-3.png" alt="実物を見て触って体感できます">
+              </div>
+
+              <h4 class="c-benifit__itemtitle">お客様に合った<span class="u-textstrong">住宅ローン</span>を診断!</h4>
+              <p>住宅ローンアドバイザーの資格を持ったスタッフが、
+                住宅ローン提携5大金融機関からお客様に合った適
+                正住宅ローンを診断いたします。 </p>
+            </div>
+            <div class="c-benifit__itemimage">
+              <img src="./assets/img/benifit-img-3.jpg" alt="実物を見て触って体感できます">
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- BENIFITS -->
+    <section class="c-recommended l-container l-container--w1740">
+      <div class="c-recommended__top">
+        <img class="c-recommended__icon" src="./assets/img/icon-event.png" alt="recommended point">
+
+        <div class="c-recommended__heading">
+          <h2 class="c-recommended__title u-fontfour">
+            RECOMMENDED POINT
+          </h2>
+          <h3 class="c-recommended__subtitle u-colorblack">
+            イベント・見学会の<span class="c-recommended__subtitle--strong u-fontsecond u-colorblue">見どころ！</span>
+          </h3>
+        </div>
+      </div>
+      <div class="c-recommended__body">
+        <div class="c-recommended__inner">
+          <div class="c-recommended__item">
+            <img src="./assets/img/recommend-1.jpg" alt="豊富な+FUNのオプション">
+            <div class="c-recommended__itembody">
+              <h4 class="c-recommended__itemtitle u-colorblack ">豊富な+FUNのオプション</h4>
+              <p class="c-recommended__itemcontent u-colorblack">
+                1,100万円の家をベースに、ライフスタイルにあった+FUNのオプションを組み合わせられます。価格が決まった明朗なシステムで、GOOD
+                DESIGN賞を受賞。</p>
+            </div>
+          </div>
+          <div class="c-recommended__item">
+            <img src="./assets/img/recommend-2.jpg" alt="豊富な+FUNのオプション">
+            <div class="c-recommended__itembody">
+              <h4 class="c-recommended__itemtitle u-colorblack">シンプルな四角い外観</h4>
+              <p class="c-recommended__itemcontent u-colorblack">
+                住む方の生活に馴染むよう、シンプルでムダを削ぎ落とした四角い家。凹凸のないレイアウトで、室内も広々した空間を実現。</p>
+            </div>
+          </div>
+          <div class="c-recommended__item">
+            <img src="./assets/img/recommend-3.jpg" alt="豊富な+FUNのオプション">
+            <div class="c-recommended__itembody">
+              <h4 class="c-recommended__itemtitle u-colorblack">ガルバリウム鋼板の外壁・屋根</h4>
+              <p class="c-recommended__itemcontent u-colorblack">外壁・屋根に使われているガルバリウム鋼板は、無骨で美しいZERO-CUBEの外観の特徴。<br>
+                耐久・耐熱性など機能面に優れた、高品質の素材です。</p>
+
+            </div>
+          </div>
+          <div class="c-recommended__item">
+            <img src="./assets/img/recommend-4.jpg" alt="豊富な+FUNのオプション">
+            <div class="c-recommended__itembody">
+              <h4 class="c-recommended__itemtitle u-colorblack">家族を感じるリビング</h4>
+              <p class="c-recommended__itemcontent u-colorblack">
+                1階が見渡せる対面キッチンでは、家族との会話も弾みます。吹き抜けのリビングイン階段は、居間を導線の中心に考えた、家族のコミュニケーションが生まれる設計。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESENT -->
+    <section class="c-present l-container l-container--w1190">
+      <h2>
+        <a href="#">
+          <img src="./assets/img/present-banner-1.jpg" alt="2日前までにWEBまたはお電話で「webcoco完全ご予約制見学会」に来場予約された方">
+        </a>
+      </h2>
+    </section>
+
+    <!-- DESIGN -->
+    <section class="c-design">
+      <!-- Design Slider -->
+      <div class="c-design__slider">
+        <div class="c-slider__content">
+          <div class="c-design__slideritem">
+            <img class="c-design__sliderimage" src="./assets/img/slick01.jpg" alt="slider1">
+          </div>
+          <div class="c-design__slideritem">
+            <img class="c-design__sliderimage" src="./assets/img/slick02.jpg" alt="slider2">
+          </div>
+          <div class="c-design__slideritem">
+            <img class="c-design__sliderimage" src="./assets/img/slick03.jpg" alt="slider3">
+          </div>
+          <div class="c-design__slideritem">
+            <img class="c-design__sliderimage" src="./assets/img/slick04.jpg" alt="slider4">
+          </div>
+          <div class="c-design__slideritem">
+            <img class="c-design__sliderimage" src="./assets/img/slick05.jpg" alt="slider5">
+          </div>
+          <div class="c-design__slideritem">
+            <img class="c-design__sliderimage" src="./assets/img/slick06.jpg" alt="slider6">
+          </div>
+        </div>
+
+        <div class="c-slider__control">
+          <div class="c-slider__button c-slider__prevbutton">
+            <img src="./assets/img/slider-prev.png" alt="previous button">
+          </div>
+          <div class="c-slider__button c-slider__nextbutton">
+            <img src="./assets/img/slider-next.png" alt="next button">
+          </div>
+        </div>
+      </div>
+
+      <!-- Design Content -->
+      <article class="c-design__article">
+        <div class="c-design__content u-colorblack">
+          <h2 class="c-sectionheader c-sectionheader--left u-fontfour">
+            DESIGN
+          </h2>
+
+          <h3 class="c-design__title ">
+            シンプルで美しいデザイン、 <br>
+            いつまでも・誰にでも愛される空間に。
+          </h3>
+
+          <p class="c-desing__info">
+            長く愛される「居心地の良い場所」はシンプルなルールで作られるもの。<br>
+            壁の色を白で統一したシンプルな間取り。<br>
+            余計な装飾は施さず、こだわりの家具やインテリアを <br>
+            あなた色に合わせてコーディネートを楽しめる <br>
+            年齢や性別を意識しない誰にでも愛される空間です。
+          </p>
+        </div>
+        <div class="c-design__iframe">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GtH-3_jjTvQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </article>
+    </section>
+
+    <!-- PLAN -->
+    <section class="c-plan l-container l-container--w1204">
+      <h2 class="c-sectionheader c-sectionheader--center u-fontfour">
+        Plan
+      </h2>
+
+      <div class="c-plan__design">
+        <div class="c-plan__designimage">
+          <img src="./assets/img/1F.jpg" alt="Design 1F">
+          <img src="./assets/img/1ficon.png" alt="plan" class="c-plan__icon">
+        </div>
+        <div class="c-plan__designimage">
+          <img src="./assets/img/2F.jpg" alt="Design 2F">
+          <img src="./assets/img/2ficon.png" alt="plan" class="c-plan__icon">
+        </div>
+      </div>
+      <div class="c-plan__detail u-colorblack">
+        <p class="c-plan__detailitem">1階床面積 <span class="c-plan__detailunit">192.53㎡(58.24坪）</span></p>
+        <p class="c-plan__detailitem">2階床面積<span class="c-plan__detailunit">139.01㎡(42.05坪）</span></p>
+        <p class="c-plan__detailitem">延床面積<span class="c-plan__detailunit">331.54㎡(100.29坪）</span> </p>
+      </div>
+
+      <div class="c-plan__info u-colorblack">
+        <dl class="c-plan__infoitem">
+          <dt class="c-plan__infoname">商品プラン</dt> 
+          <dd class="c-plan__infodescription">ZERO-CUBE</dd>
+        </dl>
+        <dl class="c-plan__infoitem">
+          <dt class="c-plan__infoname">構造</dt> 
+          <dd class="c-plan__infodescription">木造2階建て</dd>
+        </dl>
+        <dl class="c-plan__infoitem">
+          <dt class="c-plan__infoname">設備・仕様</dt> 
+          <dd class="c-plan__infotag">
+            <span class="c-plan__tagitem">W断熱/TOPS工法</span>
+            <span class="c-plan__tagitem">無垢材・自然素材</span>
+            <span class="c-plan__tagitem">高性能住宅</span>
+            <span class="c-plan__tagitem">玄関共有タイプ</span>
+            <span class="c-plan__tagitem">防音構造床</span>
+          </dd>
+        </dl>
+        <dl class="c-plan__infoitem">
+          <dt class="c-plan__infoname">空間</dt> 
+          <dd class="c-plan__infotag">
+            <span class="c-plan__tagitem">二世帯・多世帯</span>
+            <span class="c-plan__tagitem">1、2階リビング</span>
+            <span class="c-plan__tagitem">吹抜け</span>
+          </dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- FINANCE -->
+    <section class="c-finance">
+      <h2 class="c-sectionheader c-sectionheader--center u-fontfour">
+        FINANCE
+      </h2>
+
+      <div class="c-finance__cost">
+        <span class="c-finance__costcontent"><span class="c-finance__costnumber">3,400</span>万円借入の場合</span>
+      </div>
+
+      <div class="c-finance__content">
+        <div class="c-finance__box">
+          <p class="c-finance__text">借入金　・・・・・・・・・・3,400万円</p>
+          <p class="c-finance__text">  ボーナス払い・・・・・・・・・・0万円</p>
+          <p class="c-finance__text"> 3年固定金利・・・・・・・・・・0.725％ </p> 
+          <p class="c-finance__text"> 返済期間・・・・・・・・・・・・・35年</p>
+        </div>
+        <div class="c-finance__box"></div>
+      </div>
+    </section>
+  </main>
+  <!-- @@content -->
+
