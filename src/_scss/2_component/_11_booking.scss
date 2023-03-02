@@ -1,0 +1,108 @@
+.c-booking {
+    padding: 65px 0;
+    text-align: center;
+
+    .c-booking__title {
+        font-size: 3.4rem;
+        font-weight: 400;
+        color: #231815;
+        
+        .c-booking__title--strong {
+            font-family: $second-fonts;
+            font-size: 4.6rem;
+            color: #252a6d;
+            letter-spacing: 12px;
+        }
+    }
+
+    .c-booking-subtitle {
+        font-size: 2.7rem;
+        font-weight: 300;
+        color: #231815;
+        padding-top: 24px;
+    }
+
+    .c-booking__steps {
+        display: flex;
+        max-width: 1686px;
+        width: 100%;
+        margin: 69px auto 0;
+        justify-content: space-between;
+    }
+    
+    .c-booking__stepitem {
+        background-color: #231815;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 400;
+        width: 286px;
+        padding: 55px 0 50px;
+    }
+
+    .c-booking__itemtitle {
+        font-weight: 400;
+        font-size: 2.1rem;
+        margin-top: 25px;
+        padding-bottom: 12px;
+        position: relative;
+
+        &::before { 
+            position: absolute;
+            content: "";
+            border-bottom: 1px solid #fff;
+            bottom: 0;
+            left: 8%;
+            width: 83%;
+        }
+    }
+
+    .c-booking__itemcontent {
+        margin-top: 16px;
+    }
+
+    .c-booking__table {
+        margin-top: 116px;
+        text-align: center;
+    }
+
+    .c-booking__tablehead {
+        color: #fff;
+        background: #231815;
+        padding: 63px 0 53px;
+    }
+
+    .c-booking__tabletitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 106px 0 94px;
+    }
+
+    .c-booking__tablelink {
+        color: #231815;
+        font-size: 2.33rem;
+        background: #fff;
+        display: inline-flex;
+        font-weight: 700;
+        border-radius: 23px;
+        line-height: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 25px;
+    }
+
+    .c-booking__waring {
+        font-size: 3.2rem;
+        font-weight: 300;
+        letter-spacing: 2.4px;
+        font-feature-settings: "palt";
+    }
+
+    .c-booking__slogan {
+        margin-top: 30px;
+        line-height: 1;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 1.6px;
+        font-feature-settings: "palt";
+    }
+}

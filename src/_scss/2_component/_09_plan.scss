@@ -9,14 +9,38 @@ table
 
     .c-plan__design {
         display: flex;
-        padding-top: 86px;
+        padding-top: 78px;
+        max-width: 1360px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .c-plan__designimage {
+        width: 46%;
+        position: relative;
+
+        &:first-child {
+            transform: translateX(87px);
+
+        }
+
+        &:last-child {
+            transform: translateX(38px);
+        }
+    }
+
+    .c-plan__icon {
+        position: absolute;
+        bottom: -34px;
+        left: 32px;
     }
 
     .c-plan__detail {
         font-size: 2.2rem;
         font-weight: 300;
         color: #231815;
-        padding-top: 50px;
+        padding-top: 83px;
         display: flex;
         justify-content: center;
     }
