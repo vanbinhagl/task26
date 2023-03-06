@@ -22,6 +22,7 @@ line
         padding: 10px 58px 25px;
         font-size: 3rem;
         line-height: 1;
+        font-weight: 400;
     }
 
     .c-finance__costnumber {
@@ -30,11 +31,12 @@ line
 
     .c-finance__content {
         display: flex;
-        max-width: 1260px;
+        max-width: 1333px;
         justify-content: space-between;
+        padding: 0 36.5px;
         margin: 44px auto 0;
     }
-    
+
     .c-finance__box {
         width: 100%;
         max-width: 600px;
@@ -102,7 +104,7 @@ line
             transform: rotate(-129deg) translate(19px, -1px);
         }
 
-        .c-finance__payment { 
+        .c-finance__payment {
             padding-top: 35px;
         }
 
