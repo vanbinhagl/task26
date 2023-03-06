@@ -15,13 +15,13 @@
 // breakpoint
 //============================================
 @mixin sp {
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 576px) {
         @content;
     }
 }
 
 @mixin tab {
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 992px) {
         @content;
     }
 }

@@ -15,13 +15,36 @@ btn
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-46%, -49%);
+        transform: translate(-46%, -43%);
         text-align: center;
+        background: rgba(#fff, 0.5);
+        width: 434px;
+        height: 461px;
     }
 
     .c-mainvisual__logo {
         display: block;
         margin-top: 114px;
-        margin-bottom: 60px;
+        margin-bottom: 53px;
+    }
+
+    .c-mainvisual__slogan {
+        font-size: 2rem;
+        font-family: $second-fonts;
+        font-weight: 700;
+        letter-spacing: -1.5px;
+        font-feature-settings: "palt";
+        transform: translateX(-7px);
+        margin-bottom: 36px;
+
+        .c-mainvisual__slogan--fixspacing {
+            display: inline-block;
+            transform: translateX(-7px);
+            letter-spacing: -2.5px;
+        }
+    }
+
+    .c-mainvisual__open {
+        transform: translateX(4px);
     }
 }

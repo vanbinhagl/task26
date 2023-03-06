@@ -1,0 +1,87 @@
+.c-access {
+    background-color: #ededed;
+    display: flex;
+
+    .c-access__map {
+        flex: 1;
+    }
+
+    .c-access__info {
+        flex: 1;
+        padding-bottom: 127px;
+    }
+
+    .c-access__head {
+        padding-top: 133px;
+        transform: translateX(-30px);
+
+        .c-sectionheader.c-sectionheader--center {
+            &::before {
+                width: 74px;
+                transform: translate(-50%, -9px);
+            }
+        }
+    }
+
+    .c-access__subtitle {
+        font-size: 2.8rem;
+        color: #000;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .c-access__content {
+        padding-left: 181px;
+        margin-top: 87px;
+    }
+
+    .c-access__item {
+        display: flex;
+        align-items: flex-start;
+
+        &:nth-child(2) {
+            .c-access__desc .c-access__desc--fixspacing {
+                transform: translate(-5px, 4px);
+                letter-spacing: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            .c-access__desc {
+                letter-spacing: 1px;
+                transform: translate(2px, 5px);
+            }
+        }
+    }
+
+    .c-access__property {
+        background-color: #565f64;
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 1;
+        width: 120px;
+        text-align: center;
+        padding-block: 11px;
+        margin-bottom: 12px;
+        margin-right: 21px;
+    }
+
+    .c-access__desc {
+        font-size: 2.5rem;
+        letter-spacing: 4.5px;
+        font-feature-settings: "palt";
+
+        .c-access__desc--fixspacing {
+            transform: translateX(4px);
+            display: inline-block;
+
+        }
+    }
+
+    .c-access__note {
+        text-align: right;
+        padding-right: 23%;
+        letter-spacing: 1.3px;
+    }
+}
