@@ -36,11 +36,16 @@ line
     }
     
     .c-finance__box {
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
         background-color: #fff;
         font-size: 2.2rem;
         padding: 89px 0 66px 81px;
         position: relative;
+
+        &:first-child {
+            margin-right: 30px;
+        }
     }
 
     .c-finance__text {

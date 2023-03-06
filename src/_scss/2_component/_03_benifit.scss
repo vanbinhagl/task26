@@ -43,7 +43,8 @@ icon
     }
 
     .c-benifit__itemcontent {
-        width: 592px;
+        max-width: 592px;
+        flex: 1 1 592px;
         position: relative;
         padding-top: 90px;
         padding-left: 90px;

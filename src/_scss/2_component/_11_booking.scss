@@ -35,9 +35,11 @@
         color: #fff;
         font-size: 1.6rem;
         font-weight: 400;
-        width: 286px;
-        padding: 55px 0 44px;
+        width: 100%;
+        max-width: 286px;
+        padding: 55px 15px 44px;
         position: relative;
+        margin-right: 60px;
 
         &:not(:last-child)::after {
             position: absolute;
@@ -52,6 +54,7 @@
 
         &:last-child {
             background-color: #7a89a8;
+            margin-right: 0;
         }
 
         &:nth-child(2),

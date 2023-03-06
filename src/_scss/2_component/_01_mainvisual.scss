@@ -9,6 +9,8 @@ btn
         height: 1053px;
         background: url("./assets/img/bg-banner.png");
         position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .c-mainvisual__inner {

@@ -6,7 +6,6 @@ img
 ------------------------------------------------------------*/
 
 .c-design {
-
     padding-top: 123px;
     position: relative;
 
@@ -24,6 +23,7 @@ img
 
     .c-design__slideritem,
     .c-design__slider {
+        width: 96%;
         max-width: 1440px;
     }
 
@@ -52,14 +52,18 @@ img
 
     .c-design__article {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         padding-right: 8.4rem;
-        column-gap: 14.4rem;
+        max-width: 1600px;
+        margin-left: auto;
+        padding-left: 30px;
     }
 
     .c-design__content {
         font-size: 1.9rem;
         font-weight: 300;
+        padding-left: 15px;
+        margin-right: 9.25%;
 
         .c-sectionheader {
             line-height: 1;
@@ -82,7 +86,7 @@ img
         font-weight: 400;
         margin: 23px 0 30px;
     }
-    
+
     .c-design__iframe {
         margin-top: 104px;
 
