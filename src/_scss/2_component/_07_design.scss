@@ -6,91 +6,138 @@ img
 ------------------------------------------------------------*/
 
 .c-design {
-    padding-top: 123px;
-    position: relative;
+  padding-top: 123px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    max-width: 1205px;
+    width: 63%;
+    height: 527px;
+    background-color: #ededed;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+  }
+
+  .c-design__slideritem,
+  .c-design__slider {
+    width: 96%;
+    max-width: 1440px;
+  }
+
+  .c-design__sliderimage {
+    width: 100%;
+    height: 683px;
+    object-fit: cover;
+    @include sp {
+      height: 201px;
+    }
+  }
+
+  .c-slider__control {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 37px;
+    column-gap: 20px;
+
+    .c-slider__button {
+      width: 53px;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    @include sp {
+      margin-right: 2px;
+      margin-top: 11px;
+      column-gap: 11px;
+
+      .c-slider__button {
+        width: 32px;
+      }
+    }
+  }
+
+  .c-design__article {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8.4rem;
+    max-width: 1600px;
+    margin-left: auto;
+    padding-left: 30px;
+
+    @include sp {
+      flex-direction: column;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      align-items: center;
+    }
+  }
+
+  .c-design__content {
+    font-size: 1.9rem;
+    font-weight: 300;
+    padding-left: 15px;
+    margin-right: 9.25%;
+
+    .c-sectionheader {
+      line-height: 1;
+    }
+
+    @include sp {
+      font-size: 1rem;
+      padding-left: 1.5rem;
+      padding-top: 13px;
+      margin-right: 0;
+    }
+  }
+
+  .c-desing__info {
+    line-height: 1.8;
+  }
+
+  .c-design__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .c-design__title {
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin: 23px 0 30px;
+    @include sp {
+      font-size: 1.35rem;
+      line-height: 1.4;
+      margin: 12px 0 17px;
+    }
+  }
+
+  .c-design__iframe {
+    margin-top: 104px;
+    width: 702px;
+    height: 390px;
+
+    @include sp {
+      margin-top: 47px;
+      width: 86%;
+      height: 168px;
+    }
+  }
+
+  @include sp {
+    padding-top: 50px;
 
     &::before {
-        position: absolute;
-        content: "";
-        max-width: 1205px;
-        width: 63%;
-        height: 527px;
-        background-color: #ededed;
-        right: 0;
-        top: 50%;
-        z-index: -1;
+      width: 52%;
+      height: 254px;
+      top: 30%;
     }
-
-    .c-design__slideritem,
-    .c-design__slider {
-        width: 96%;
-        max-width: 1440px;
-    }
-
-    .c-design__sliderimage {
-        width: 100%;
-        height: 683px;
-        object-fit: cover;
-    }
-
-    .c-slider__control {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 37px;
-        column-gap: 20px;
-
-        .c-slider__button {
-            width: 53px;
-            height: 53px;
-            cursor: pointer;
-
-            &:hover {
-                opacity: 0.7;
-            }
-        }
-    }
-
-    .c-design__article {
-        display: flex;
-        justify-content: space-between;
-        padding-right: 8.4rem;
-        max-width: 1600px;
-        margin-left: auto;
-        padding-left: 30px;
-    }
-
-    .c-design__content {
-        font-size: 1.9rem;
-        font-weight: 300;
-        padding-left: 15px;
-        margin-right: 9.25%;
-
-        .c-sectionheader {
-            line-height: 1;
-        }
-    }
-
-    .c-desing__info {
-        line-height: 1.8;
-    }
-
-    .c-design__header {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .c-design__title {
-        font-size: 2.7rem;
-        font-weight: 400;
-        margin: 23px 0 30px;
-    }
-
-    .c-design__iframe {
-        margin-top: 104px;
-
-        width: 702px;
-        height: 390px;
-    }
+  }
 }

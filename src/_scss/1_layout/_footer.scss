@@ -2,26 +2,42 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    padding: 86px 0 85px;
-    background: #fff;
-    text-align: center;
-    max-width: 1192px;
-    width: 100%;
-    margin: 0 auto;
+  padding: 88px 30px 85px;
+  background: #fff;
+  text-align: center;
+  max-width: 1252px;
+  width: 100%;
+  margin: 0 auto;
 
-    .c-access__content {
-        font-family: $four-fonts;
-        color: #000;
-        font-weight: 300;
-        font-size: 4.8rem;
-        text-transform: uppercase;
-        border: 1px solid #000;
-        margin-top: 92px;
-        padding-block: 105px;
-        letter-spacing: 4px;
+  .c-access__content {
+    font-family: $four-fonts;
+    color: #000;
+    font-weight: 300;
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    margin-top: 92px;
+    padding-block: 105px;
+    letter-spacing: 4px;
+    @include sp {
+      margin-top: 19px;
+      padding-top: 40px;
+      padding-bottom: 33px;
+      font-size: 2.4rem;
+      letter-spacing: 2.4px;
     }
+  }
 
-    .c-footer__logo {
-        margin-top: 85px;
+  .c-footer__logo {
+    margin-top: 85px;
+    @include sp {
+      width: 104px;
+      margin-top: 34px;
+      margin-inline: auto;
     }
+  }
+
+  @include sp {
+    padding: 28px 28px 30px;
+  }
 }

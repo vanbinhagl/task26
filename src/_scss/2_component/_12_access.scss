@@ -1,89 +1,159 @@
 .c-access {
-    background-color: #ededed;
+  background-color: #ededed;
+  display: flex;
+
+  .c-access__map {
+    flex: 1;
+
+    @include sp {
+      flex: 1 1 290px;
+    }
+  }
+
+  .c-access__info {
+    flex: 1;
+    padding-bottom: 125px;
+    @include sp {
+      padding-bottom: 37px;
+    }
+  }
+
+  .c-access__head {
+    padding-top: 133px;
+    transform: translateX(-30px);
+
+    .c-sectionheader.c-sectionheader--center {
+      &::before {
+        width: 74px;
+        transform: translate(-50%, -9px);
+      }
+    }
+
+    @include sp {
+      padding-top: 31px;
+      transform: translateX(0);
+      text-align: center;
+      .c-sectionheader.c-sectionheader--center {
+        margin-right: -18px;
+        padding-bottom: 18px;
+        display: inline-block;
+        &::before {
+          width: 36px;
+          transform: translate(-57%, -9px);
+        }
+      }
+    }
+  }
+
+  .c-access__subtitle {
+    font-size: 2.8rem;
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 16px;
+    @include sp {
+      font-size: 1.4rem;
+      max-width: 80%;
+      margin: 4px auto 0 47px;
+    }
+  }
+
+  .c-access__content {
+    max-width: 511px;
+    margin: 87px auto 0;
+
+    @include sp {
+      max-width: 275px;
+      margin-top: 43px;
+    }
+  }
+
+  .c-access__item {
     display: flex;
+    align-items: flex-start;
+    margin-left: -44px;
 
-    .c-access__map {
-        flex: 1;
+    &:nth-child(2) {
+      .c-access__desc .c-access__desc--fixspacing {
+        transform: translate(-5px, 4px);
+        letter-spacing: 0;
+      }
     }
 
-    .c-access__info {
-        flex: 1;
-        padding-bottom: 127px;
+    &:nth-child(3) {
+      .c-access__desc {
+        letter-spacing: 1px;
+        transform: translate(2px, 5px);
+      }
     }
 
-    .c-access__head {
-        padding-top: 133px;
-        transform: translateX(-30px);
-
-        .c-sectionheader.c-sectionheader--center {
-            &::before {
-                width: 74px;
-                transform: translate(-50%, -9px);
-            }
+    @include pc {
+      margin-left: 0;
+    }
+    @include sp {
+      margin-left: 12px;
+      &:nth-child(2) {
+        .c-access__desc .c-access__desc--fixspacing {
+          transform: translate(0px, 2px);
         }
-    }
-
-    .c-access__subtitle {
-        font-size: 2.8rem;
-        color: #000;
-        font-weight: 300;
-        text-align: center;
-        margin-top: 16px;
-    }
-
-    .c-access__content {
-        max-width: 511px;
-        margin: 87px auto 0;
-    }
-
-    .c-access__item {
-        display: flex;
-        align-items: flex-start;
-        margin-left: -44px;
-
-        &:nth-child(2) {
-            .c-access__desc .c-access__desc--fixspacing {
-                transform: translate(-5px, 4px);
-                letter-spacing: 0;
-            }
+      }
+      &:nth-child(3) {
+        .c-access__desc {
+          letter-spacing: 0.3px;
+          transform: translate(1px, 3px);
         }
-
-        &:nth-child(3) {
-            .c-access__desc {
-                letter-spacing: 1px;
-                transform: translate(2px, 5px);
-            }
-        }
+      }
     }
+  }
 
-    .c-access__property {
-        background-color: #565f64;
-        color: #fff;
-        font-size: 2.5rem;
-        line-height: 1;
-        width: 120px;
-        text-align: center;
-        padding-block: 11px;
-        margin-bottom: 12px;
-        margin-right: 21px;
+  .c-access__property {
+    background-color: #565f64;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1;
+    width: 120px;
+    text-align: center;
+    padding-block: 11px;
+    margin-bottom: 12px;
+    margin-right: 21px;
+    @include sp {
+      font-size: 1.25rem;
+      max-width: 60px;
+      padding-block: 5px;
+      margin-bottom: 7px;
+      margin-right: 11px;
     }
+  }
 
-    .c-access__desc {
-        font-size: 2.5rem;
-        letter-spacing: 4.5px;
-        font-feature-settings: "palt";
+  .c-access__desc {
+    font-size: 2.5rem;
+    letter-spacing: 4.5px;
+    font-feature-settings: "palt";
 
-        .c-access__desc--fixspacing {
-            transform: translateX(4px);
-            display: inline-block;
-        }
+    .c-access__desc--fixspacing {
+      transform: translateX(4px);
+      display: inline-block;
     }
-
-    .c-access__note {
-        text-align: right;
-        letter-spacing: 1.2px;
-        font-size: 1.5rem;
-        font-feature-settings: "palt";
-        margin-right: 6px;
+    @include sp {
+      font-size: 1.25rem;
+      letter-spacing: 2px;
     }
+  }
+
+  .c-access__note {
+    text-align: right;
+    letter-spacing: 1.2px;
+    font-size: 1.5rem;
+    font-feature-settings: "palt";
+    margin-right: 6px;
+    @include sp {
+      font-size: 0.8rem;
+      transform: translateX(21px);
+      letter-spacing: 0.6px;
+    }
+  }
+  @include sp {
+    margin-top: 60px;
+    flex-direction: column;
+  }
 }

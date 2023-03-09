@@ -5,8 +5,12 @@ navi
 /*
 ------------------------------------------------------------*/
 .c-present {
-    max-width: 1222px;
+    max-width: 1252px;
     width: 100%;
     margin: 0 auto;
-    padding: 11.6rem 15px 0;
+    padding: 11.9rem 3rem 0;
+
+    @include sp {
+        padding: 6.1rem 2.8rem 0;
+    }
 }

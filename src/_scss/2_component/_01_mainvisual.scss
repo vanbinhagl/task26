@@ -5,48 +5,86 @@ btn
 /*
 ------------------------------------------------------------*/
 .c-mainvisual {
-    .c-mainvisual__content {
-        height: 1053px;
-        background: url("./assets/img/bg-banner.png");
-        position: relative;
-        background-repeat: no-repeat;
-        background-size: cover;
+  .c-mainvisual__content {
+    height: 1052px;
+    background: url("./assets/img/bg-banner.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include sp {
+      height: auto;
+      background: url(./assets/img/banner-sp.jpg);
+      background-size: contain;
+      padding-top: 109%;
+    }
+  }
+
+  .c-mainvisual__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, -43%);
+    text-align: center;
+    background: rgba(#fff, 0.5);
+    width: 434px;
+
+    @include sp {
+      width: 217px;
+      height: 230px;
+      transform: translate(-50%, -58%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .c-mainvisual__logo {
+    display: block;
+    margin-top: 114px;
+    margin-bottom: 53px;
+
+    @include sp {
+      width: 116px;
+      margin: 58px 0 27px;
+    }
+  }
+
+  .c-mainvisual__slogan {
+    font-size: 2rem;
+    font-family: $second-fonts;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    font-feature-settings: "palt";
+    transform: translateX(-7px);
+    margin-bottom: 36px;
+
+    .c-mainvisual__slogan--fixspacing {
+      display: inline-block;
+      transform: translateX(-7px);
+      letter-spacing: -2.5px;
     }
 
-    .c-mainvisual__inner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-46%, -43%);
-        text-align: center;
-        background: rgba(#fff, 0.5);
-        width: 434px;
-        height: 461px;
-    }
+    @include sp {
+      letter-spacing: -0.6px;
+      font-size: 1rem;
+      transform: translateX(-2px);
+      margin-bottom: 18px;
 
-    .c-mainvisual__logo {
-        display: block;
-        margin-top: 114px;
-        margin-bottom: 53px;
+      .c-mainvisual__slogan--fixspacing {
+        transform: translateX(-5px);
+        letter-spacing: -1px;
+      }
     }
+  }
 
-    .c-mainvisual__slogan {
-        font-size: 2rem;
-        font-family: $second-fonts;
-        font-weight: 700;
-        letter-spacing: -1.5px;
-        font-feature-settings: "palt";
-        transform: translateX(-7px);
-        margin-bottom: 36px;
-
-        .c-mainvisual__slogan--fixspacing {
-            display: inline-block;
-            transform: translateX(-7px);
-            letter-spacing: -2.5px;
-        }
+  .c-mainvisual__open {
+    transform: translateX(4px);
+    padding-bottom: 85px;
+    @include sp {
+      width: 163px;
+      transform: translateX(8px);
+      padding-bottom: 35px;
     }
-
-    .c-mainvisual__open {
-        transform: translateX(4px);
-    }
+  }
 }
